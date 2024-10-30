@@ -68,5 +68,3 @@ This project is released into the public domain. Feel free to use it however you
 
 Feel free to open issues or submit pull requests on GitHub.
 
-Understanding this code will help you write better self-documenting Makefiles. The key is using the `#_#` prefix to mark documentation comments that should appear in the help output.
-
