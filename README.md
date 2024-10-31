@@ -4,11 +4,11 @@ A simple and elegant way to add self-documenting help to your Makefiles. Works w
 
 ## Overview
 
-make-help lets you document your Makefile targets directly in the source using special comments. These comments are automatically extracted and displayed when running `make` with no arguments or `make help`.
+With make-help you document Makefile targets directly in the source using special comments. These comments are automatically extracted and displayed when running `make help`.
 
 ## Usage
 
-Just run `make` to see how it works! Including `make.mk` at the top of your main Makefile means the default target will show documentation for all targets in your project.
+Just run `make` in this project to see how it works! Including `make.mk` at the top of your main Makefile means the default target will show documentation for all targets in your project.
 
 Add help text to your Makefiles using `#_#` comments for your targets:
 
@@ -22,10 +22,10 @@ mytarget:
 
 ## Features
 
-- Works with both GNU Make and BSD Make automatically
-- Supports multi-line help text with preserved formatting
+- Works with both GNU Make and BSD Make
+- Supports multi-line help text and preserves formatting
 - Works across included Makefiles
-- Skips system includes and help system files
+- Skips BSD system Makefiles
 - Simple and lightweight implementation
 - Easy to integrate into existing projects
 
