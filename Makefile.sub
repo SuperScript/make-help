@@ -1,5 +1,3 @@
-include help.mk
-
 #_# foo.sub: This appears in the included Makefile.sub
 foo.sub:
 	echo this is foo.sub

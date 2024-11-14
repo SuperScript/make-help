@@ -1,7 +1,3 @@
-
 #_# help: Display this helpful message
-
-MAKE_TYPE != test -n "$(MAKEFILE_LIST)" && echo gnu || echo bsd
-
-include help.$(MAKE_TYPE).mk
-
+_HELP_TYPE != test -n "$(MAKEFILE_LIST)" && echo '$(dir $(lastword $(MAKEFILE_LIST)))help.gnu.mk' || echo help.bsd.mk
+include $(_HELP_TYPE)
