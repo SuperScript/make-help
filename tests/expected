@@ -1,0 +1,22 @@
+Makefile:
+  foo: A top-level target
+ 
+  bar: A top-level target with additional help
+       All of the help comments are included in the output
+ 
+  baz: Another top-level target
+       Makefile names are printed without indentation
+       The #_# prefix is replaced by a single space
+       No additional formatting is done
+       Aligned input produces aligned output
+ 
+  tests
+    Run test suite and diff with expected results
+ 
+help.mk:
+  help
+    Display this helpful message
+ 
+Makefile.sub:
+  foo.sub: This appears in the included Makefile.sub
+ 

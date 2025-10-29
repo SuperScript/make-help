@@ -1,4 +1,5 @@
 #_# foo.sub: This appears in the included Makefile.sub
+#_#
 foo.sub:
 	echo this is foo.sub
 
