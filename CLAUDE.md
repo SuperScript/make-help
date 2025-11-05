@@ -25,6 +25,7 @@ Target documentation uses `#_#` prefix:
 ```makefile
 #_# target-name: Description
 #_#              Additional lines with preserved indentation
+#_#
 target-name:
     commands
 ```
