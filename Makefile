@@ -34,6 +34,6 @@ tests:
 
 include Makefile.sub
 # Test filename exclusion
-include mk/Makefile.bsd.mk
-include mk/Makefile.gnu.mk
+include mktest/Makefile.bsd.mk
+include mktest/Makefile.gnu.mk
 
