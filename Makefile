@@ -1,6 +1,6 @@
 # Sample usage for help.mk
 
-include help.mk
+include mk/help.mk
 
 #_# foo: A top-level target
 #_#

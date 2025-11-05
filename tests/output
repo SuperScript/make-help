@@ -13,7 +13,7 @@ Makefile:
   tests
     Run test suite and diff with expected results
  
-help.mk:
+mk/help.mk:
   help
     Display this helpful message
  

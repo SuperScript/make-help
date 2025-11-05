@@ -8,11 +8,11 @@ This is **make-help**, a lightweight utility for adding self-documenting help to
 
 ## Key Architecture
 
-The system has a clever cross-platform design:
+The system has a clever cross-platform design in the `mk/` directory:
 
-1. **help.mk** - Entry point that auto-detects GNU Make vs BSD Make using shell test
-2. **help.gnu.mk** - GNU Make implementation using `$(MAKEFILE_LIST)`
-3. **help.bsd.mk** - BSD Make implementation using `$(.MAKE.MAKEFILES)`
+1. **mk/help.mk** - Entry point that auto-detects GNU Make vs BSD Make using shell test
+2. **mk/help.gnu.mk** - GNU Make implementation using `$(MAKEFILE_LIST)`
+3. **mk/help.bsd.mk** - BSD Make implementation using `$(.MAKE.MAKEFILES)`
 
 Both implementations:
 - Extract `#_#` comments from Makefiles using `sed -n 's/^#_#/ /p'`

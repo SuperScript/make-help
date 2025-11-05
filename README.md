@@ -31,14 +31,11 @@ mytarget:
 
 ## Installation
 
-1. Copy these files to your project:
-   - help.mk
-   - help.gnu.mk
-   - help.bsd.mk
+1. Copy the `mk/` directory to your project (containing help.mk, help.gnu.mk, and help.bsd.mk)
 
 2. Add this line before other targets in your Makefile:
 ```makefile
-include help.mk
+include mk/help.mk
 ```
 
 That's it! Now running `make` will show help for all documented targets.
